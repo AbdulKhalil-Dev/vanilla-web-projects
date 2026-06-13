@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="icon"
+      href="/src/img/favicon.ico"
+      sizes="256x256"
+      type="image/x-icon"/>
+    <title>Corespan Systems</title>
+    <!-- link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="hidden lg:block border-b bg-white border-gray-100 mr-4">
+        <div class="flex h-10 relative items-center justify-end space-x-4">
+          <a class="text-sm transition-colors text-dark hover:text-[#5236FF]" href="/login">Customer Login</a
+          >
+          <div class="relative">
+            <button aria-label="Search"
+              class="transition text-gray-800 hover:text-[#5236FF]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search w-5 h-5"
+                aria-hidden="true">
+                <path d="m21 21-4.34-4.34"></path>
+                <circle cx="11" cy="11" r="8"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="mx-auto container px-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <a class="flex w-[226px] items-center" href="/">
+              <img
+                src="/src/img/logo.webp"
+                alt="Corespan Systems logo"
+                loading="lazy"
+                width="246"
+                height="98"
+                decoding="async"
+                class="w-full h-auto"
+                style="color: transparent"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:flex lg:items-center lg:space-x-8">
+
+  <!-- Dropdown Menu! -->
+ <div class="relative group pr-0.5">
+  <a class="flex items-center text-primary text-gray-800 hover:text-[#5236FF] font-medium transition-colors"
+    href="#">
+    <span>Products</span>
+    <svg class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+  <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-[250px] text-left bg-white border border-gray-200 rounded-2xl shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10">
+<div class="h-[4px] bg-[#5236FF] w-[93%] mx-auto mb-2 rounded-t-2xl"></div>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Corespan Composer
+  
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Photonic Resource Unit
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+      Fabric Interface Card 2500
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+      Photonic Fabric
+</a>
+  </div>
+</div>
+<div class="relative group pr-0.5">
+  <a class="flex items-center text-primary text-gray-800 hover:text-[#5236FF] font-medium transition-colors"
+    href="#">
+    <span>Solution</span>
+    <svg class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+  <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-[250px] text-left bg-white border border-gray-200 rounded-2xl shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10">
+<div class="h-[4px] bg-[#5236FF] w-[93%] mx-auto mb-2 rounded-t-2xl"></div>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  dynamicxcelerator
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  2500 Series
+</a>
+  </div>
+</div>
+<div class="relative group pr-0.5">
+  <a class="flex items-center text-primary text-gray-800 hover:text-[#5236FF] font-medium transition-colors"
+    href="#">
+    <span>About</span>
+    <svg class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+  <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-[250px] text-left bg-white border border-gray-200 rounded-2xl shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10">
+<div class="h-[4px] bg-[#5236FF] w-[93%] mx-auto mb-2 rounded-t-2xl"></div>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  History
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  LeaderShip
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Industry Partners
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Careers
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  News And Events
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+    Contact
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+    fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round"
+    class="w-4 h-4 text-[#5236FF] opacity-0 translate-x-[-4px] group-hover:opacity-100 group-hover:translate-x-[3px]transition-all duration-200">
+    <path d="m9 6 6 6-6 6"></path>
+  </svg> -->
+</a>
+</div>
+</div>
+<div class="relative group pr-0.5">
+  <a class="flex items-center text-primary text-gray-800 hover:text-[#5236FF] font-medium transition-colors"
+    href="#">
+    <span>Resources</span>
+    <svg class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+  <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-[250px] text-left bg-white border border-gray-200 rounded-2xl shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10">
+<div class="h-[4px] bg-[#5236FF] w-[93%] mx-auto mb-2 rounded-t-2xl"></div>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Datasheets
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Videos
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Blogs
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Articles
+</a>
+<a href="#" class="flex items-center px-4 py-3 mb-2 hover:bg-[#f5f4ff] font-bold">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+class="w-6 h-6 mr-2 bg-[#E0DBFF] text-[#5236FF] rounded p-1">
+<path d="m9 6 6 6-6 6"></path>
+  </svg>
+  Faqs</a>
+  </div>
+</div>
+  <a href="/"class="px-8 py-3 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center bg-[#5236FF] hover:bg-gray-900 text-white shadow-md hover:shadow-lg cursor-pointer">CTA Button</a>
+  </div>
+  <div class="flex lg:hidden">
+  <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-100 hover:text-[#5236FF] transition-colors">
+              <span class="sr-only">Open main menu</span>
+              <div>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="min-h-screen">
+      <section id="hero" class="relative bg-white overflow-hidden pb-2">
+        <div class="mx-auto container px-2">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-1">
+            <div class="order-2 lg:order-1 text-center md:text-start">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#19163F] leading-loose tracking-tight mb-6">
+                AI Infrastructure <br> 
+               <span class="leading-[1.2] inline-block">Solutions</span> 
+              </h1>
+              <p class="text-lg sm:text-xl text-gray-600 leading-relaxed mb-3 max-w-xl">
+                From core to edge, Corespan delivers AI-native infrastructure
+                that puts control, performance, and security back in your hands.
+              </p>
+              <div class="flex flex-wrap max-md:justify-center gap-4 pt-4">
+                <a class="px-8 py-2 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center text-white shadow-md hover:shadow-lg bg-[#5236FF] hover:bg-gray-900 cursor-pointer"
+                  href="/products"
+                  >See Our Products</a
+                >
+              </div>
+            </div>
+            <div class="order-1 lg:order-2 relative">
+              <div
+                class="relative w-full aspect-square lg:aspect-auto lg:h-[500px] xl:h-[600px] mt-[55px]">
+                <img alt="Hero Image" decoding="async" src="/src/img/img1.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features-grid-vl" class="mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <div class="container mx-auto">
+          <div class="text-center mx-auto">
+            <div class="text-center mb-12 lg:mb-12">
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#19163F] mb-4 lg:max-w-[824px] m-auto">
+                Our Solutions - AI-ready, photonic-native, composable
+                infrastructure
+              </h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12">
+              <div
+                class="bg-[#F8F8FA] rounded-2xl p-6 lg:p-18 flex flex-col sm:flex-row items-center sm:items-start gap-6 transition-all duration-300 hover:shadow-lg">
+                <div class="flex-shrink-0">
+                  <div class="w-24 h-24 lg:w-28 lg:h-28 bg-pale rounded-2xl flex items-center justify-center">
+                    <img src="/src/img/tool.svg"
+                      alt="DynamicXcelerator"
+                      loading="lazy"
+                      width="56"
+                      height="56"
+                      decoding="async"
+                      data-nimg="1"
+                      class="w-14 h-14 object-contain"
+                      style="color: transparent"/>
+                  </div>
+                </div>
+                <div class="flex-1 text-center sm:text-start min-w-0">
+                  <h3 class="text-xl lg:text-2xl font-bold text-dark mb-3">
+                    DynamicXcelerator
+                  </h3>
+                  <p class="text-dark/70 text-base mb-4 leading-relaxed">
+                    DynamicXcelerator is an infrastructure composition system
+                    that virtualizes and disaggregates GPUs.
+                  </p>
+                  <a
+                    class="inline-flex items-center text-[#5236FF] hover:text-[#8F66FF] font-semibold transition-colors"
+                    href="/solutions/dynamicxcelerator"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="bg-[#F8F8FA] rounded-2xl p-6 lg:p-18 flex flex-col sm:flex-row items-center sm:items-start gap-6 transition-all duration-300 hover:shadow-lg"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-24 h-24 lg:w-28 lg:h-28 bg-pale rounded-2xl flex items-center justify-center"
+                  >
+                    <img
+                      src="/src/img/tool.svg"
+                      alt="DynamicXcelerator"
+                      loading="lazy"
+                      width="56"
+                      height="56"
+                      decoding="async"
+                      data-nimg="1"
+                      class="w-14 h-14 object-contain"
+                      style="color: transparent"
+                    />
+                  </div>
+                </div>
+                <div class="flex-1 text-center sm:text-start min-w-0">
+                  <h3 class="text-xl lg:text-2xl font-bold text-dark mb-3">
+                    Corespan 2500 Series
+                  </h3>
+                  <p class="text-dark/70 text-base mb-4 leading-relaxed">
+                    The Corespan 2500 Series is a co-packaged optics platform
+                    delivering high-performance interconnect and system-level
+                    flexibility.
+                  </p>
+                  <a
+                    class="inline-flex items-center text-[#5236FF] hover:text-[#8F66FF] font-semibold transition-colors"
+                    href="/solutions/2500-series"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="2xl:container 2xl:m-auto relative my-24 flex flex-col items-end">
+        <div class="mx-auto w-full overflow-hidden">
+          <div class="text-center mb-12 px-4">
+            <h2 class="text-4xl font-bold mb-4">
+              Our Products - Hardware and Software, Perfectly Composed
+            </h2>
+          </div>
+
+      <div class="relative w-full overflow-hidden">
+  <div id="btnTrack" class="flex gap-4 transition-transform duration-300">
+    <button class="btn overflow-hidden">Corespan Composer</button>
+    <button class="btn">Photonic Fabric</button>
+    <button class="btn">Fabric Interface Card 2500</button>
+    <button class="btn">Photonic Resource Unit</button>
+  </div>
+  <button onclick="slideLeft()" class="absolute left-[50px] top-1/1 -translate-y-1/2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-[80px] text-[#5236FF] h-[93px]" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+  </button>
+  <button onclick="slideRight()" class="absolute right-[50px] top-1/1 -translate-y-1/2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-[80px] text-[#5236FF] h-[93px]" aria-hidden="true">
+    <path d="m9 6 6 6-6 6"></path>
+</svg>
+  </button>
+</div>
+       
+          <div class="bg-white py-16 lg:p-12 w-[90%] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" style="opacity: 1; transform: none;">
+              <div class="flex flex-col items-center sm:items-start text-center sm:text-start">
+                <h3 class="text-3xl font-bold mb-4">Photonic Resource Unit</h3>
+                <p class="text-[#5D5B78] mb-6">Transform your data center with Corespan Composer offering comprehensive virtualization, storage management, and cloud computing capabilities.</p>
+                <div class="flex gap-4 flex-wrap">
+                  <a href="/products/photonic-resource-unit" class="px-8 py-3 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center bg-[#5236FF] hover:bg-gray-900 text-white shadow-md hover:shadow-lg cursor-pointer">Learn More</a>
+                </div>
+              </div>
+              <div class="relative w-full lg:max-w-[500px] aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="/src/img/comptr.jpg" alt="photonic-Resource-Unit" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl" sizes="100vw">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="content-image-cta-v2" class="relative mx-auto pl-4 sm:px-6 lg:pr-0 py-8 mb-52">
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-10">
+            <img alt="About Corespan" width="700" height="700" decoding="async" data-nimg="1" class="md:w-[87vw] lg:w-[29vw] w-full lg:h-[55vh] object-cover rounded-2xl ml-[95px]" style="color: transparent" src="/src/img/group.jpg">
+          </div>
+          <div class="flex w-full justify-between items-center gap-6">
+            <div class="w-full lg:pr-40 lg:basis-[48%] lg:h-[80vh] 2xl:items-center rounded-[22px] p-8 md:p-20 lg:px-18 py-10 xl:py-10 bg-gray-200 flex flex-col gap-6 xl:gap-10 justify-center items-start">
+              <h1 class="text-[36px] xl:text-[45px] max-w-[560px] font-bold leading-tight text-[#111827]">About Corespan</h1>
+              <p class="text-[18px] font-normal text-gray-900 text-left max-w-[500px]">We’re here to make high-performance infrastructure easier. With Corespan, you can compose and allocate resources in real time, without overspending or overbuilding.</p>
+              <div class="flex flex-wrap gap-4">
+                <a href="/about" class="px-8 py-3 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center bg-[#5236FF] hover:bg-gray-900 text-white shadow-md hover:shadow-lg cursor-pointer">Learn More</a>
+              </div>
+            </div>
+            <div class="rounded-l-[22px] p-16 bg-[#5236FF] lg:basis-[40%] h-[80vh] hidden lg:block !lg:mr-0">
+            </div>
+          </div>
+      </section>
+
+      <section id="testimonials" class="bg-[#5236FF] sm:px-6 lg:px-4 relative mb-[45px]">
+        <div class="relative -top-40 text-center text-black mb-2 z-20">
+          <h2 class="text-4xl font-bold">Partners and Associations</h2>
+        </div>
+      <div class="absolute inset-0 z-0">
+                <img alt loading="lazy" decoding="async" srcset="/src/img/blue.png">
+        </div>
+        <div class="container mx-auto relative z-10">
+            <section class="jsx py-0 px-4 sm:px-6 lg:px-8">
+              <div class="jsx container mx-auto">
+                <div class="jsx shadow-lg bg-[#F6F6F6] p-8 md:p-10 rounded-[135px] max-w-6xl mx-auto overflow-hidden relative z-20 -top-28">
+                <div class="jsx relative">
+                <div class="jsx overflow-hidden">
+                  <div class="jsx flex whitespace-nowrap partner-marque">
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Polatis</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Switching</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Ranovus</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Co-Packaged Optics</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">NetMetrix France</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Interconnects</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Future-Channel</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Integration</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">E4</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Data Center Engineering</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">QBO</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Platform Strategy</div>
+                  </div>
+                  </div>
+
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Innoboost</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Commercialization Support</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">IOWN Global Forum</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Industry Collaboration</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Ranovus</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Co-Packaged Optics</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">NetMetrix France</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Interconnects</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Polatis</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Switching</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">E4</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Data Center Engineering</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Innoboost</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Commercialization Support</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">IOWN Global Forum</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Industry Collaboration</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Polatis</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Switching</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Ranovus</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Co-Packaged Optics</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">NetMetrix France</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Interconnects</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Future-Channel</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Integration</div>
+                  </div>
+                  </div>
+                <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">E4</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Data Center Engineering</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">QBO</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Platform Strategy</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Innoboost</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Commercialization Support</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">IOWN Global Forum</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Industry Collaboration</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Ranovus</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Co-Packaged Optics</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">NetMetrix France</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Interconnects</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Polatis</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Optical Switching</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">E4</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Data Center Engineering</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">Innoboost</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Commercialization Support</div>
+                  </div>
+                  </div>
+                  <div class="jsx inline-flex flex-col items-center justify-center px-6 md:px-8 shrink-0 min-w-fit">
+                  <div class="jsx text-center">
+                    <div class="jsx text-base md:text-lg font-semibold text-dark mb-1 whitespace-normal">IOWN Global Forum</div>
+                    <div class="jsx text-xs md:text-sm text-gray-600 whitespace-normal">Industry Collaboration</div>
+                  </div>
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-20 max-w-5xl w-full flex flex-col space-y-6 justify-center items-center text-white" tabindex="1" style="padding-left: 15%; text-align: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-12 h-12 mb-4 text-center mx-auto" aria-hidden="true">
+            <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+            <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+          </svg>
+          <p class="text-base md:text-lg lg:text-xl text-center font-bold text-white leading-loose" style="line-height: 26px; width: 750px; word-spacing: 1.5px;">
+            We initially received $12,000 in cloud credits from one of the major providers to get started. However, the credits were consumed faster than expected, and after a short time, only $4,000 remained. This was primarily from running application benchmarks using 8× H100 and 2× A100 GPUs. We were surprised at how quickly the credits were depleted, even though the workloads were limited to performance testing of our app.
+          </p>
+          <div class="text-center">
+            <h2 class="text-[38px] font-semibold">John</h2>
+            <span class="text-[20px] font-normal">
+              Engineering Team, Drut Customer
+            </span>
+          </div>
+        </div>
+       </section>
+
+       <section class="py-[60px] px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">
+              Insights & Resources
+            </h2>
+          </div>
+          <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="group flex gap-4 md:gap-10 p-4 bg-gray-100 rounded-[20px] cursor-pointer col-span-1 items-center flex-col lg:flex-row lg:col-span-2">
+              <div class="w-full lg:w-[48%] h-auto md:p-4 object-contain flex flex-center justify-center round-[10px] md:round-[18px] px-2">
+              <div class="overflow-hidden rounded-[20px] w-full">
+              <img src="/src/img/comptr.jpg" alt="Test Blog" class="w-full object-cover group-hover:scale-[1.04] transition-all duration-300 ease-in">
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 xl:gap-8 w-full lg:w-[50%] md:p-4">
+                <button class="bg-[rgba(181,214,198,0.5)] hover:bg-green-200 text-green-600 px-12 text-[20px] cursor-pointer py-[16px] font-semibold rounded-[34px] w-fit mt-8 transition-all duration-200 hover:scale-[1.02]">Featured</button>
+                <h2 class="text-[24px] md:text-[28px] font-bold text-gray-900 max-w-[400px]">
+                  Test Blog Featured
+                </h2>
+                <p class="text-gray-800 text-[16px] md:text-[18px] font-normal">It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum...</p>
+                <a href="#" class="text-green-600 py-1 text-[18px] md:text-[20px] font-semibold hover:underline w-fit hover:-text-gray-900 transition-all duration-300 ease-in">Read More</a>
+              </div>
+            </div>
+            <div class="group flex gap-4 md:gap-10 p-4 md:p-6 bg-gray-100 rounded-[20px] cursor-pointer col-span-1 flex-col">
+              <div class="w-full object-contain flex items-center justify-center rounded-[10px] md:rounded-[18px]">
+                <div class="overflow-hidden rounded-[20px] w-full">
+                  <img src="/src/img/group.jpg" alt="Blog post or article can be highlighted here!" class="w-full object-cover false transition-all duration-300 ease-in">
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 xl:gap-8 w-full">
+                <h2 class="text-[24px] md:text-[28px] font-bold text-gray-900 max-w[400px]">
+                Blog post or article can be highlighted here! [testing instant rebuild]
+                </h2>
+                <p class="text-gray-800 text-[16px] md:text-[18px] font-normal">
+              It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum...
+                </p>
+                  <a href="#" class="text-green-600 py-1 text-[18px] md:text-[20px] font-semibold hover:underline w-fit hover:-text-gray-900 transition-all duration-300 ease-in hover:text-gray-800">Read More</a>
+              </div>
+            </div>
+
+            <div class="group flex gap-4 md:gap-10 p-4 md:p-6 bg-gray-100 rounded-[20px] cursor-pointer col-span-1 flex-col">
+              <div class="w-full object-contain flex items-center justify-center rounded-[10px] md:rounded-[18px]">
+                <div class="overflow-hidden rounded-[20px] w-full">
+                  <img src="/src/img/group.jpg" alt="Blog post or article can be highlighted here!" class="w-full object-cover false transition-all duration-300 ease-in">
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 xl:gap-8 w-full">
+                <h2 class="text-[24px] md:text-[28px] font-bold text-gray-900 max-w[400px]">
+                Blog post or article can be highlighted here! [testing instant rebuild]
+                </h2>
+                <p class="text-gray-800 text-[16px] md:text-[18px] font-normal">
+              It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum...
+                </p>
+                  <a href="#" class="text-green-600 py-1 text-[18px] md:text-[20px] font-semibold hover:underline w-fit hover:-text-gray-900 transition-all duration-300 ease-in hover:text-gray-800">Read More</a>
+              </div>
+            </div>
+          <div class="col-span-full flex mt-10 justify-center items-center">
+            <a href="#" class="px-8 py-3 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center bg-primary bg-[#5236FF] hover:bg-gray-900 text-white shadow-md hover:shadow-lg cursor-pointer">See All Resources</a>
+          </div>
+          </div>
+        </div>
+       </section>
+
+       <section class="relative py-[55px] max-w-[90%] lg:max-w-[1214px] overflow-hidden -mb-40 rounded-[50px] mx-auto h-[440px]">
+        <div class="absolute top-0 left-0 w-full h-full bg-[#6F59F9]">
+          <img src="/src/img/white.jpeg" alt="Optimize Your GPU Investment." loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="absolute top-0 left-0 w-full h-full object-cover opacity-80 mix-blend-multiply" style="color: transparent;">        
+        </div>
+        <div class="container mx-auto p-4 sm:px-14 lg:px-20 text-center relative z-10">
+          <h2 class="text-[30px] md:text-[52px] max-w-[1000px] px=6 leading-[40px] md:leading-[57px] font-bold mb-4 md:mb-14 text-white">Optimize Your GPU Investment. Request a Consultation</h2>
+          <div class="flex lg:flex-row flex-col items-center justify-evenly relative">
+            <div class="flex items-start">
+              <div class="false">
+                <p class="text-[22px] leading-[35px] mb-8 text-white">Maximize utilization and match resources to real workload demand.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="px-8 py-3 rounded-full font-semibold transition-all duration-200 inline-flex items-center justify-center bg-primary text-white hover:bg-dark shadow-md hover:shadow-lg cursor-pointer !bg-[#19163F]">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
+
+    <footer class="bg-[#19163F] text-white overflow-hidden">
+      <div class="mx-auto container h-[30rem] pl-0 py-16 px-6 mb-[80px] pt-[250px] mt-[20px] ml-2">
+      <div class="grid grid-cols-1 px-6 md:px-0 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4 flex flex-col justify-end">
+          <a href="#" class="inline-block mb-6">
+            <img src="/src/img/logo.webp" alt="Corespan" loading="lazy" width="180" height="72" decoding="async" data-nimg="1" class="h-auto w-auto max-w-[180px]" style="color: transparent;">
+          </a>
+        <p class="text-white/80 mb-4">Join Our Newsletter</p>
+        <form action="" class="relative mb-6">
+          <div class="flex items-center bg-white rounded-full overflow-hidden border border-gray-300">
+          <input type="email" placeholder="Email" class="flex-1 px-5 py-3 text-gray-900 placeholder-gray-400 bg-transparent focus:outline-none text-sm" value>
+          <button type="submit" class="px-6 py-3 bg-[#5236FF] text-white hover:bg-[#634AFF] font-medium rounded-full hover:bg-primary/90 transition-colors disabled:opacity-50 text-sm">Submit</button>
+          </div>
+        </form>
+        <div class="flex">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#5236FF] hover:text-primary transition-colors" aria-label="linkedin">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+          </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-white mx-5 hover:text-[#5236FF] hover:text-primary transition-colors" aria-label="twitter">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#5236FF] hover:text-primary transition-colors" aria-label="youtube">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+          </svg>
+          </a>
+        </div>
+        </div>
+        <div class="lg:col-span-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <a href="#" class="text-base font-semibold text-white hover:text-primary transition-colors">Resources</a>
+            <ul class="mt-4 space-y-3">
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Datasheets</a></li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Videos</a></li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Blogs</a></li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Articles</a></li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Faqs</a></li>
+            </ul>
+          </div>
+
+          <div class="">
+          <a href="#" class="text-base font-semibold text-white hover:text-primary transition-colors">About</a>
+          <ul class="mt-4 space-y-3">
+            <li class="">
+            <a href="#" class="text-sm text-white/60 hover:text-white transition-colors">History</a>
+            <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Leadership</a>
+              </li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Industry Partners</a>
+              </li>
+              </li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Careers</a>
+              </li>
+              </li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">News And Events</a>
+              </li>
+              </li>
+              <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a>
+              </li>
+          </ul>
+          </div>
+          <div class="">
+          <a href="#" class="text-base font-semibold text-white hover:text-primary transition-colors">Solutions</a>
+          <ul class="mt-4 space-y-3">
+            <li class="">
+            <a href="#" class="text-sm text-white/60 hover:text-white transition-colors">dynamicxcelerator</a>
+            </li>
+            <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors">2500 Series</a>
+              </li>
+          </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <hr>
+      <div class="text-sm pl-0 text-white/60 hover:text-white border-solid">
+        <div class="py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pl-2">
+            <p class="text-sm text-white/60">&copy; 2025 Corespan Systems. All Rights Reserved. Privacy — Terms | Designed by Khalil</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="app.js"></script>
+
+  </body>
+</html>

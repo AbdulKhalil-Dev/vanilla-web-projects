@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--  maximum-scale=1.0, user-scalable=no -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+
+    <!-- favicon -->
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png">
+    <!-- title  -->
+    <title>Abdul Khalil | Web Developer | Web Designer</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome kit  -->
+<script src="https://kit.fontawesome.com/855e569032.js" crossorigin="anonymous"></script>
+<!-- ---------tailwindcss+css--------- -->
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar -->
+     <nav>
+        <div class="nav-opt">
+        <h2 class="nav-h2">CodexKhalil</h2>
+        <div class="menu">
+      <ul id="sidemenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+      </div>
+      </nav>
+
+      <!-- ------------hero--------- -->
+      <div class="hero">
+      <div class="header">
+        <div class="selection:bg-green-400 selection:text-white">
+        <h1>Shaping Experiences <br> Not Just Interfaces!</h1><br>
+        <p>Welcome to the portfolio of Abdul Khalil,
+    a professional web developer specializing in HTML, CSS, JavaScript, React.js and Node.js. Explore my projects that showcase my skills and dedication on to delivering exceptional web solution.</p>
+    </div><br>
+     <a class="exBtn" href="https://www.fiverr.com/users/khalilcodelab/seller_dashboard" target="_blank" rel="noopener noreferrer" >Explore Now</a>
+     </div>
+      <source media="(min-width:30em src)" srcset="">
+    <img id="bgImg" src="./img/khalil.jpg" alt="Developer image">
+   </div>
+
+        <!---------- about -------------->
+      <div id="about">
+          <div class="row">
+            <div class="about-col-1">
+            <img src="./img/frame.webp" alt="Developer image">
+            </div>
+               <div class="about-col-2">
+               <h2 class="sub-title">About Me</h2>
+               <p>Hi, I'm a passionate and self-taught web developer starting my journey in the world of web design and development. I specialize in creating simple, responsive websites using HTML, CSS, and JavaScript. I'm eager to learn, build creative projects, and grow my skills to deliver amazing digital experiences.</p>
+                <br><br>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                        <li><span>Front-End</span><br>Responsive Website Development</li>
+                        <li><span>Wireframing</span><br>Prototyping User-Centered Designs</li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br> UX/UI Designer Training at ET Institute.</li>
+                        <li><span>2022 - 2024</span><br>Institutor at Rise College.</li>
+                        <li><span>2021 - 2022</span><br>UX/Ui Design Executive at CodexLab.</li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>BS.CS in Catrise College Multan.</li>
+                        <li><span>2008</span><br>I.Com in BISE Multan.</li>
+                        <li><span>2010</span><br>DIT in Degree College Mian Channu.</li>
+                    </ul>
+                  </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <!----- services  -->
+
+       <div id="services">
+           <h2 class="sub-title">My Services</h2>
+           <div class="services-list">
+            <div class="box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Design</h3>
+            <p class="text">I create responsive, user-friendly websites using HTML, CSS, and JavaScript, perfect for portfolios, small businesses, and personal projects</p>
+          <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="box">
+        <i class="fa-solid fa-crop"></i>
+        <h3>UI/UX Design</h3>
+            <p class="text">I design clean, intuitive, and responsive user interfaces that enhance user experience. My focus is on simplicity, usability, and creativity</p>
+          <a href="#contact">Contact Us</a>
+        </div>
+
+
+        <div class="box">
+          <i class="fa-solid fa-layer-group"></i>
+        <h3>Front-End Development</h3>
+            <p class="text">I develop responsive, interactive websites using HTML, CSS, and JavaScript to ensure smooth performance across all devices and screens</p>
+          <a href="#contact">Contact Us</a>
+        </div>
+           </div>
+        </div>
+       </div>
+
+       <!-- -------portfolio------- -->
+        <div id="portfolio">
+          <div class="container">
+          <h2 class="sub-title">My Work</h2>
+          <div class="work-list">
+            <div class="work">
+              <img src="./img/work.1.jpeg" alt="work-img">
+              <div class="layer">
+                <h3>Stunning Visual Showcase</h3>
+                <div class="selection:bg-green-400 selection:text-white">
+                <p>Showcase your work with stunning visuals and a clean layout. Ideal for photographers, designers, and creators who want their portfolio to stand out.
+                  </div>
+                </p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./img/work.2.jpeg" alt="work-img">
+              <div class="layer">
+                <h3>Professional Front-End Web Developer</h3>
+                <div class="selection:bg-green-400 selection:text-white">
+                <p>I design and develop responsive, user-friendly websites using HTML, CSS, and JavaScript — blending modern design with clean code to deliver high-performance results.
+                  </div>
+                </p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./img/work.3.jpeg" alt="work-img">
+              <div class="layer">
+              <h3>Bringing Ideas to Screens</h3>
+                <div class="selection:bg-green-400 selection:text-white">
+              <p>Welcome to my professional portfolio. Here, you’ll find a curated collection of real-world projects, digital solutions, and creative designs. Each slide represents a unique story of innovation, collaboration, and results-driven success across various industries.
+                </div>
+              </p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+        </div>
+        
+
+        <!-- -------contact-------- -->
+
+        
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2><br>
+                
+                                <ul>
+                            <li>
+                              <h6>Personal:</h6>
+                              <i class="fa-solid fa-mobile-screen"></i>
+                              <a href="tel:+923004541151" title="Call us now" target="_blank" rel="noopener noreferrer">+92 (300) 454 11 51</a>
+                            </li>
+                            <li>
+                              <h6>Office:</h6>
+                              <i class="fa-solid fa-mobile-vibrate"></i>
+                              <a href="tel:+923457364070" title="Call us now"
+                              target="_blank" rel="noopener noreferrer">+92 (345) 736 40 70</a>
+                            </li>
+                            <li>
+                              <h6>WhatApp:</h6>
+                              <i class="fa-brands fa-whatsapp"></i>
+                              <a href="https://wa.me/923004541151" target="_blank">+92 (300) 454 11 51</a>
+                            </li>
+                          </ul>
+                          <p class="contact"><i class="fa-solid fa-paper-plane"></i>khalil.webcodex@outlook.com</p>
+
+                <div class="social-icons">
+                  <ul>
+                            <li>
+                              <h6>Email:</h6>
+                                <i class="fa-solid fa-at"></i>
+                              <a
+                                href="mailto:codexkhalil@gmail.com"
+                                target="_blank"
+                                >codexkhalil@gmail.com
+                              </a>
+                            </li>
+                            <br>
+                            <li>
+                              <h6>LinkedIn:</h6>
+                              <i class="fa-brands fa-linkedin-in"></i>
+                              <a
+                                href="https://www.linkedin.com/in/abdulkhalil1122"
+                                target="_blank" rel="noopener noreferrer"
+                                >Abdul Khalil
+                              </a>
+                            </li>
+                            <br>
+                            <li>
+                            <h6>GitHub:</h6>
+                              <i class="fa-brands fa-github"></i>
+                              <a
+                                href="https://github.com/"
+                                target="_blank"
+                                >https://github.com/
+                              </a>
+                            </li>
+                </div>
+              </div>
+                <div class="contact-right">
+                  <ul>
+                  <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="8" placeholder="Your Message" required></textarea><br><br>
+             <button id="submitBtn">Submit</button>
+                  </form>
+                </div>
+
+            </div>
+          </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 Abdul Khalil | KodeLab <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+          </div>
+        </div>
+       
+
+
+
+      <script>
+
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+          
+          function opentab(event, tabname){
+            for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+
+            for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+          sidemenu.style.right = "0";
+        }
+        function closemenu(){
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+
+<script src="index.js"></script>
+      
+</body>
+</html>

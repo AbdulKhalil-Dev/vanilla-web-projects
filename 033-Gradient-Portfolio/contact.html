@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Bro Code Navebar Class</title>
+
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="rig-frame" id="sidebar">
+   <!-- Hamburger icon -->
+   <i class="fa-solid fa-bars" id="menu-toggle"></i>
+   <!-- Close icon (hidden by default) -->
+   <i class="fa-solid fa-xmark" id="close-toggle" style="display:none;"></i>
+
+   <!-- Menu -->
+   <ul class="main-menu" id="mainMenu">
+      <li class="menu-item">
+        <a href="projects.html">Projects</a>
+      </li>
+      <li class="menu-item">
+        <a href="history.html">History</a>
+      </li>
+      <li class="menu-item">
+        <a href="contact.html">Contact</a>
+      </li>
+   </ul>
+
+   <!-- Home link hamesha visible -->
+   <ul class="main-menu home-only">
+      <li class="menu-item">
+        <a href="index.html" style="color: #ffc107;">Home</a>
+      </li>
+   </ul>
+</div>
+
+
+    <h1>Bro Code with Khalil</h1>
+
+        <h3>This is the Contact page</h3>
+        <p>Contact Us
+
+We’d love to hear from you! If you have any questions, feedback, or collaboration ideas, feel free to reach out.
+
+📞 Mobile: 0300-4541151
+🌐 Website: khalil.webcodex.com
+
+Our team is here to help you grow your skills and succeed in your web development journey.</p>
+
+    
+
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const closeBtn = document.getElementById("close-toggle");
+  const mainMenu = document.getElementById("mainMenu");
+
+  // Open menu
+  toggleBtn.addEventListener("click", () => {
+    mainMenu.classList.remove("hidden");
+    toggleBtn.style.display = "none";   // bars hide
+    closeBtn.style.display = "block";   // X show
+  });
+
+  // Close menu
+  closeBtn.addEventListener("click", () => {
+    mainMenu.classList.add("hidden");
+    closeBtn.style.display = "none";    // X hide
+    toggleBtn.style.display = "block";  // bars show
+  });
+</script>
+
+
+</body>
+</html>
